@@ -1,3 +1,3 @@
 #include <iostream>
 #include "global.hpp"
-void print_version();
+void print_version(std::ostream &stream);

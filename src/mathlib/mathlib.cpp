@@ -1,6 +1,6 @@
 #include "mathlib/mathlib.hpp"
 
-void printVersion()
+void print_version(std::ostream &stream)
 {
-    std::cout << "mathlib version: " << VERSION_MAJOR << "." << VERSION_MINOR << std::endl;
+    stream << "mathlib version: " << VERSION_MAJOR << "." << VERSION_MINOR;
 }
