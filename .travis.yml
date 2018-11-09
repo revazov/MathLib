@@ -1,9 +1,9 @@
 language: cpp
 dist: trusty
 compiler:
-  - clang++
+  - g++
 script:
   - mkdir bin && cd bin
   - cmake ..
-  - make VERBOSE=1
+  - cmake --build .
   - ./mathlib_tests
