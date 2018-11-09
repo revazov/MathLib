@@ -8,8 +8,9 @@
 
 ## How to build
 ```bash
-cd bin
+mkdir build && cd build
+conan install .. --build
 cmake ..
 cmake --build .
-./mathlib_tests
+./bin/mathlib_tests
 ```
