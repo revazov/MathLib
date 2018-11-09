@@ -1,5 +1,5 @@
 #include "mathlib/mathlib.hpp"
-#include "catch/catch.hpp"
+#include "catch.hpp"
 #include <sstream>
 
 TEST_CASE("Testing version output", "[streams]")

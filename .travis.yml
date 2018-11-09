@@ -1,9 +1,16 @@
 language: cpp
-dist: trusty
+dist: xenial
 compiler:
   - g++
+
+install:
+  # install conan
+  - pip3 install conan
+  # config conan for current system
+  - conan user
 script:
-  - mkdir bin && cd bin
+  - mkdir build && cd build
+  - conan install .. --build
   - cmake ..
   - cmake --build .
-  - ./mathlib_tests
+  - ./bin/mathlib_tests
