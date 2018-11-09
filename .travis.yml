@@ -5,7 +5,7 @@ compiler:
 
 install:
   # install conan
-  - pip install conan
+  - pip install --user conan
   # config conan for current system
   - conan user
 script:
